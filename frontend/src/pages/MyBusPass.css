@@ -1,0 +1,186 @@
+.bus-pass-page {
+  min-height: 100vh;
+  padding: 30px 16px;
+  background: #f1f5f9;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.bus-pass-topbar {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.bus-pass-topbar button,
+.bus-pass-error button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #17458b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bus-pass-card {
+  max-width: 800px;
+  margin: auto;
+  padding: 28px;
+  border: 1px solid #dce5f1;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 12px 35px rgba(20, 44, 85, 0.1);
+}
+
+.bus-pass-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 22px;
+  border-bottom: 1px dashed #cbd5e1;
+}
+
+.bus-icon {
+  font-size: 42px;
+  padding: 12px;
+  border-radius: 14px;
+  background: #e8efff;
+}
+
+.bus-pass-eyebrow {
+  color: #315caa;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.bus-pass-heading h1 {
+  margin: 5px 0;
+  font-size: 27px;
+}
+
+.bus-pass-status {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 9px 13px;
+  border-radius: 20px;
+  background: #e8f8ef;
+  color: #147744;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bus-pass-number {
+  padding: 22px;
+  border-radius: 14px;
+  background: linear-gradient(120deg, #173f83, #2769bd);
+  color: white;
+}
+
+.bus-pass-number span,
+.bus-pass-details span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.bus-pass-number h2 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.bus-pass-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 22px;
+  margin-top: 20px;
+}
+
+.bus-pass-details > div {
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.bus-pass-details span {
+  color: #64748b;
+}
+
+.bus-pass-details strong {
+  overflow-wrap: anywhere;
+}
+
+.bus-pass-qr {
+  margin-top: 25px;
+  padding: 25px 10px;
+  border-radius: 14px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.bus-pass-qr p {
+  font-weight: bold;
+}
+
+.bus-pass-qr small {
+  color: #64748b;
+}
+
+.bus-pass-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px dashed #cbd5e1;
+  text-align: center;
+}
+
+.bus-pass-footer span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.bus-pass-error {
+  text-align: center;
+}
+
+.bus-pass-error p {
+  margin: 20px 0;
+  color: #b42318;
+}
+
+.bus-pass-error .secondary-btn {
+  margin-left: 10px;
+  background: #64748b;
+}
+
+@media (max-width: 600px) {
+  .bus-pass-card {
+    padding: 18px;
+  }
+
+  .bus-pass-details {
+    grid-template-columns: 1fr;
+  }
+
+  .bus-pass-heading h1 {
+    font-size: 21px;
+  }
+}
+
+@media print {
+  .bus-pass-topbar {
+    display: none;
+  }
+
+  .bus-pass-page {
+    background: white;
+  }
+
+  .bus-pass-card {
+    box-shadow: none;
+  }
+}
